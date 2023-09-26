@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 version: str = "0.0.1"
 description: str = "A wrapper to the Discord Experiments API"
@@ -11,7 +11,7 @@ setup(
     author_email = "dev.anony.8593@gmail.com",
     description = description,
     long_description = long_description,
-    packages = find_packages("discord-experiments"),
+    packages = ["discord-experiments", "discord-experiments.utils"],
     install_requires = ["discord.py"],
     keywords = ["discordexperiments", "experiments", "dcexps", "discordexps"],
     classifiers = [
